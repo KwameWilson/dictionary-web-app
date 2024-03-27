@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, "Sans serif";
+    color: #2D2D2D;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 100vh; */
+}
+
+.container {
+    width: 736px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: 66px;
+}
+
+.logo-theme-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 52px;
+}
+
+.font-theme {
+    display: flex;
+    align-items: center;
+}
+
+.font-theme>p {
+    font-weight: 700;
+    border-right: 1px solid grey;
+}
+
+.font-theme>p>span {
+    margin: 0 26px 0px 18px;
+}
+
+.mode-toggle {
+    margin-left: 26px;
+}
+
+.search-bar {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+#search {
+    background: #F4F4F4;
+    border: 0;
+    border-radius: 10px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 24px;
+    outline: 0;
+    width: 100%;
+}
+
+.search-bar>img {
+    position: absolute;
+    right: 24px;
+    top: 20px;
+}
+
+.search-term {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.word>h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 8px;
+}
+
+.phonetics {
+    color: #A445ED;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.search-info div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-info div:first-child h3 {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.search-info div:first-child span {
+    display: inline-block;
+    background: #E9E9E9;
+    height: 1px;
+    margin-left: 16px;
+    width: 656px;
+}
