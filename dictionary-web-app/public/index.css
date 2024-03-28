@@ -14,6 +14,7 @@
 body {
     font-family: Inter, "Sans serif";
     color: #2D2D2D;
+    overflow: hidden;
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: center; */
@@ -54,11 +55,13 @@ body {
     margin-left: 26px;
 }
 
-input {
+input[type="checkbox"] {
+    opacity: 0;
     display: none;
 }
 
 label {
+    cursor: pointer;
     background: #757575;
     border-radius: 10px;
     position: relative;
@@ -67,10 +70,26 @@ label {
     height: 20px;
 }
 
+label::before {
+    background: #fff;
+    border-radius: 50%;
+    content: '';
+    top: 3px;
+    left: 3px;
+    position: absolute;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    transition: transform .2s ease-in;
+}
+
+input[type="checkbox"]:checked+label::before {
+    transform: translateX(140%);
+}
+
 .mode-toggle img {
     margin-left: 20px;
 }
-
 
 
 .search-bar {
