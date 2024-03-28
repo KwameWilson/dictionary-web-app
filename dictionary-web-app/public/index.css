@@ -54,6 +54,25 @@ body {
     margin-left: 26px;
 }
 
+input {
+    display: none;
+}
+
+label {
+    background: #757575;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.mode-toggle img {
+    margin-left: 20px;
+}
+
+
+
 .search-bar {
     position: relative;
     margin-bottom: 45px;
@@ -101,13 +120,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .search-info div:first-child h3 {
+    display: inline-block;
     font-size: 24px;
     font-style: italic;
     font-weight: 700;
-    display: inline-block;
 }
 
 .search-info div:first-child span {
@@ -116,4 +136,90 @@ body {
     height: 1px;
     margin-left: 16px;
     width: 656px;
+}
+
+.definition>p:first-of-type {
+    color: #757575;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.definition>ul {
+    margin: 0 0 64px 44px;
+}
+
+.definition>ul li,
+.alt-definition>ul li {
+    color: #8F19E8;
+}
+
+.definition>ul li:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+.definition>ul li span,
+.alt-definition>ul li span {
+    color: #2D2D2D;
+    font-weight: 500;
+}
+
+.definition>p:nth-of-type(2) {
+    color: #757575;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.definition>p:nth-of-type(2)>span {
+    color: #8F19E8;
+    font-weight: 700;
+    margin-left: 22px;
+}
+
+.alt-definition div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alt-definition div:first-child h3 {
+    display: inline-block;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.alt-definition div:first-child span {
+    display: inline-block;
+    background: #E9E9E9;
+    height: 1px;
+    margin-left: 16px;
+    width: 656px;
+}
+
+.alt-definition>p:first-of-type {
+    color: #757575;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.alt-definition {
+    margin-bottom: 40px;
+}
+
+.alt-definition>ul li {
+    margin-bottom: 13px;
+}
+
+.container>p:last-child {
+    border-top: 1px solid #E9E9E9;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #757575;
+    text-decoration: underline;
+}
+
+.container>p:last-child a {
+    font-size: 20px;
+    color: #2D2D2D;
+    margin-left: 20px;
 }
