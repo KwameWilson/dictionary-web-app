@@ -15,15 +15,20 @@ body {
     font-family: Inter, "Sans serif";
     color: #2D2D2D;
     overflow: hidden;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* height: 100vh; */
+}
+
+.light-mode {
+    background: #fff;
+}
+
+.dark-mode {
+    background: #050505;
 }
 
 .container {
     width: 736px;
     margin: 0 auto;
+
 }
 
 .logo {
@@ -42,9 +47,14 @@ body {
     align-items: center;
 }
 
-.font-theme>p {
+.light-mode .font-theme>p {
     font-weight: 700;
     border-right: 1px solid grey;
+}
+
+.dark-mode .font-theme>p {
+    font-weight: 700;
+    color: #fff;
 }
 
 .font-theme>p>span {
@@ -62,7 +72,6 @@ input[type="checkbox"] {
 
 label {
     cursor: pointer;
-    background: #757575;
     border-radius: 10px;
     position: relative;
     display: inline-block;
@@ -70,8 +79,15 @@ label {
     height: 20px;
 }
 
+.light-mode label {
+    background: #757575;
+}
+
+.dark-mode label {
+    background: #A445ED;
+}
+
 label::before {
-    background: #fff;
     border-radius: 50%;
     content: '';
     top: 3px;
@@ -82,6 +98,17 @@ label::before {
     height: 14px;
     transition: transform .2s ease-in;
 }
+
+.light-mode label::before,
+.dark-mode label::before {
+    background: #fff;
+}
+
+/* .dark-mode .font-theme div:nth-child(2) {
+    border: 1px solid red;
+    background-image: url(/dictionary-web-app/public/img/icon-moon-dark.svg);
+    background-repeat: no-repeat;
+} */
 
 input[type="checkbox"]:checked+label::before {
     transform: translateX(140%);
